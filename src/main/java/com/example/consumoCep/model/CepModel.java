@@ -9,6 +9,7 @@ public class CepModel {
 	private String complemento;
 	private String localidade;
 	private String uf;
+	
 	public String getCep() {
 		return cep;
 	}

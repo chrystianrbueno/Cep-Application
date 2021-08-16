@@ -11,6 +11,7 @@ import org.springframework.web.client.RestTemplate;
 import com.example.consumoCep.model.CepModel;
 
 @RestController
+//localhost:8080/api/cep
 @RequestMapping("/api/cep")
 public class CepRestController {
 	@Autowired
