@@ -24,7 +24,7 @@ public class ConsumoCepApplication {
 	@Bean
 	public CommandLineRunner run(RestTemplate restTemplate) throws Exception {
 		return args -> {
-			CepModel cep = restTemplate.getForObject("https://viacep.com.br/ws/01001000/json/", CepModel.class);
+			CepModel cep = restTemplate.getForObject("https://viacep.com.br/ws/92031030/json/", CepModel.class);
 			System.out.println(cep.toString());
 		};
 	}

@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties
 public class CepModel {
 	private String cep;
-	private String logradoura;
+	private String logradouro;
 	private String complemento;
 	private String localidade;
 	private String uf;
@@ -16,11 +16,11 @@ public class CepModel {
 	public void setCep(String cep) {
 		this.cep = cep;
 	}
-	public String getLogradoura() {
-		return logradoura;
+	public String getLogradouro() {
+		return logradouro;
 	}
-	public void setLogradoura(String logradoura) {
-		this.logradoura = logradoura;
+	public void setLogradouro(String logradouro) {
+		this.logradouro = logradouro;
 	}
 	public String getComplemento() {
 		return complemento;
@@ -42,7 +42,7 @@ public class CepModel {
 	}
 	@Override
 	public String toString() {
-		return "Cep [cep=" + cep + ", logradoura=" + logradoura + ", complemento=" + complemento + ", localidade="
+		return "Cep [cep=" + cep + ", logradouro=" + logradouro + ", complemento=" + complemento + ", localidade="
 				+ localidade + ", uf=" + uf + "]";
 	}
 	

@@ -20,7 +20,7 @@ public class CepRestControllerTest {
 	
 	@Test
 	public void shouldReturnCepFromJson() throws Exception {
-		mvc.perform(get("/api/cep/92990000"))
+		mvc.perform(get("/api/cep/9299000a0"))
 			.andExpect(status().isOk())
 			.andExpect(content().contentType(MediaType.APPLICATION_JSON))
 			.andExpect(content().json("{\"cep\":\"92990-000\",\"logradoura\":null,\"complemento\":\"\",\"localidade\":\"Eldorado do Sul\",\"uf\":\"RS\"}"));
